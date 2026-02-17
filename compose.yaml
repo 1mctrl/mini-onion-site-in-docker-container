@@ -1,0 +1,25 @@
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
+    container_name: iconsite-nginx
+    networks:
+      - dark
+
+  tor:
+    build: ./tor
+    container_name: tor-node
+    networks:
+      - dark
+    volumes:
+      - tor-data:/var/lib/tor
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9050:9050"
+      
+networks:
+  dark:
+
+volumes:
+  tor-data:

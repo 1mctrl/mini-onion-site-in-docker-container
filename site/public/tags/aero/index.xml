@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aero on ICON&#39;s BLOG</title>
+    <link>http://iconsite.i2p/tags/aero/</link>
+    <description>Recent content in Aero on ICON&#39;s BLOG</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Jan 2026 22:05:36 +0500</lastBuildDate>
+    <atom:link href="http://iconsite.i2p/tags/aero/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First Post</title>
+      <link>http://iconsite.i2p/posts/first-post/</link>
+      <pubDate>Thu, 22 Jan 2026 22:05:36 +0500</pubDate>
+      <guid>http://iconsite.i2p/posts/first-post/</guid>
+      <description>&lt;h2 id=&#34;привет-я-испытываю-hugo&#34;&gt;Привет я испытываю hugo&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code&gt;- Это список  &#xA;- ссылки [google](https://google.com)  &#xA;- код ```console.log(&amp;quot;hello&amp;quot;);```  &#xA;&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

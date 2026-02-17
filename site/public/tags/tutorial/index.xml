@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorial on ICON&#39;s BLOG</title>
+    <link>http://iconsite.i2p/tags/tutorial/</link>
+    <description>Recent content in Tutorial on ICON&#39;s BLOG</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 23 Jan 2026 21:39:26 +0500</lastBuildDate>
+    <atom:link href="http://iconsite.i2p/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Networking</title>
+      <link>http://iconsite.i2p/posts/networking/</link>
+      <pubDate>Fri, 23 Jan 2026 21:39:26 +0500</pubDate>
+      <guid>http://iconsite.i2p/posts/networking/</guid>
+      <description>&lt;h1 id=&#34;part-1-инструмент-ipcalc&#34;&gt;Part 1. Инструмент ipcalc&lt;/h1&gt;&#xA;&lt;h2 id=&#34;часть-11-сети-и-маски&#34;&gt;Часть 1.1: Сети и маски&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Поднята виртуальная машина ws1 с Ubuntu 20.04 Server LTS&lt;/li&gt;&#xA;&lt;li&gt;С помощью ipcalc определены и зафиксированы:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Адрес сети для 192.167.38.54/13&lt;/li&gt;&#xA;&lt;li&gt;Перевод масок:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;255.255.255.0 в префиксную и двоичную запись&lt;/li&gt;&#xA;&lt;li&gt;/15 в обычную и двоичную запись&lt;/li&gt;&#xA;&lt;li&gt;Двоичная маска 11111111.11111111.11111111.11110000 была преобразована в обычную форму 255.255.255.240 и префикс /28.&lt;br&gt;&#xA;(я перевед в ручную так не думаю этот ipcal не умеет перыве три сокета это 255 а последний 240&lt;br&gt;&#xA;кол-во единиц: 8+8+8+4=28)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Минимальный и максимальный хост для сети 12.167.38.4 при масках:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;/8&lt;/li&gt;&#xA;&lt;li&gt;11111111.11111111.00000000.00000000&lt;/li&gt;&#xA;&lt;li&gt;255.255.254.0&lt;/li&gt;&#xA;&lt;li&gt;/4&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Скриншот вывода ipcalc:&lt;br&gt;&#xA;&lt;img src=&#34;http://iconsite.i2p/img/linuxnetwork/ipcalc0.png&#34; alt=&#34;Вывод ipcalc&#34;&gt;&lt;br&gt;&#xA;&lt;img src=&#34;http://iconsite.i2p/img/linuxnetwork/ipcalc1.png&#34; alt=&#34;ipcalc&#34;&gt;&#xA;показан полный вывод ipcalc для вычисления адреса сети, преобразования масок и определения минимального и максимального хоста&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;часть-12-localhos&#34;&gt;Часть 1.2: localhos&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Определена возможность обращения к приложению, работающему на localhost, со следующих IP-адресов:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;194.34.23.100&lt;/li&gt;&#xA;&lt;li&gt;127.0.0.2&lt;/li&gt;&#xA;&lt;li&gt;127.1.0.1&lt;/li&gt;&#xA;&lt;li&gt;128.0.0.1&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Скриншот проверки на локальное подключение:&lt;br&gt;&#xA;&lt;img src=&#34;http://iconsite.i2p/img/linuxnetwork/localhost.png&#34; alt=&#34;localhost&#34;&gt;&lt;/li&gt;&#xA;&lt;li&gt;для проверки я использовал tmux (termina multiplexer) и поднял локальное приложения на 8080 порту&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;python3 -m http.server &lt;span style=&#34;color:#ae81ff&#34;&gt;8080&lt;/span&gt;   &#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;и попытался подключится с локальными ip для начала, и видно что подключение удалось исходя из логов на левой части терминала.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

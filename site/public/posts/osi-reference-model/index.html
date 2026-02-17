@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Osi Reference Model - ICON&#39;s BLOG</title>
+  <link rel="stylesheet" href="/aero.css">
+</head>
+<body>
+
+<main>
+  <article class="post">
+    <h1>Osi Reference Model</h1>
+
+    
+      <p class="date">2026-01-27</p>
+    
+
+    <h1 id="эталоная-модель-внутри--и-межсетевого-ваимодействия">Эталоная модель внутри- и межсетевого ваимодействия</h1>
+<p>(<a href="https://en.wikipedia.org/wiki/OSI_model">Open Systems Interconnection (OSI) model</a>)</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: right">Уровень</th>
+          <th>Название уровня</th>
+          <th>PDU (единица данных протокола)</th>
+          <th>Функции</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: right"><strong>Хостовые уровни</strong></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="text-align: right">7</td>
+          <td>Прикладной (Application)</td>
+          <td>Данные</td>
+          <td>Высокоуровневые протоколы для доступа к ресурсам и сервисам, например HTTP</td>
+      </tr>
+      <tr>
+          <td style="text-align: right">6</td>
+          <td>Представления (Presentation)</td>
+          <td>Данные</td>
+          <td>Преобразование данных между сетевой службой и приложением: кодирование символов, сжатие данных, шифрование и дешифрование</td>
+      </tr>
+      <tr>
+          <td style="text-align: right">5</td>
+          <td>Сеансовый (Session)</td>
+          <td>Данные</td>
+          <td>Управление сеансами связи: установка, поддержка и завершение диалога между двумя узлами</td>
+      </tr>
+      <tr>
+          <td style="text-align: right">4</td>
+          <td>Транспортный (Transport)</td>
+          <td>Сегмент</td>
+          <td>Надёжная передача данных между узлами: сегментация, подтверждения, управление потоком и мультиплексирование</td>
+      </tr>
+      <tr>
+          <td style="text-align: right"><strong>Средовые уровни</strong></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td style="text-align: right">3</td>
+          <td>Сетевой (Network)</td>
+          <td>Пакет, датаграмма</td>
+          <td>Адресация и маршрутизация в многоузловой сети, управление трафиком</td>
+      </tr>
+      <tr>
+          <td style="text-align: right">2</td>
+          <td>Канальный (Data Link)</td>
+          <td>Кадр</td>
+          <td>Передача кадров данных между двумя узлами, соединёнными физическим уровнем</td>
+      </tr>
+      <tr>
+          <td style="text-align: right">1</td>
+          <td>Физический (Physical)</td>
+          <td>Бит, символ</td>
+          <td>Передача и приём необработанных битовых потоков по физической среде</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>Основная идея этой эталонной модели заключается в том что каждому уровню отводится конкретная роль.</li>
+<li>Необходимые соглашения для связи одного уровня с другими называется <a href="https://en.wikipedia.org/wiki/Communication_protocol">протоколом</a>.</li>
+<li>Большое число уровней используемых в модели обеспечивает декомпозицию информационно-вычислительного процесса на простые составляющие. В свою очередь увеличение числа уровней вызывает необходимость<br>
+включения дополнительных связей в соответсвтвии с дополнительными протоколами и интерфейсами. Интерфейсы (макрокомманды, программы) зависят от возможнойстей используемой системы.</li>
+</ul>
+
+
+    <p><a href="/">← Back</a></p>
+  </article>
+</main>
+
+</body>
+</html>
