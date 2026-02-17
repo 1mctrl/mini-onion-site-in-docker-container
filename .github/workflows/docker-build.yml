@@ -1,0 +1,29 @@
+name: Docker Build Test
+
+on:
+  push:
+    branches: [ "iconsite" ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build images
+        run: docker compose build
+
+      - name: Start stack
+        run: docker compose up -d
+
+      - name: Wait for Tor bootstrap
+        run: sleep 20
+
+      - name: Check container status
+        run: docker ps
