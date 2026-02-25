@@ -1,6 +1,9 @@
 
 # iconsite-stack
 
+<img width="1860" height="1080" alt="image" src="https://github.com/user-attachments/assets/be8a532a-e468-4459-86bd-163a0b144acd" />
+
+
 Minimal reproducible Tor hidden service + Nginx static site stack.
 
 This project runs:
